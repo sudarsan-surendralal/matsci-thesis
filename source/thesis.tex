@@ -1,0 +1,39 @@
+\include{commands}
+
+% Trying out new biblatex format
+% Specifying how the references should be rendered
+\usepackage[backend=bibtex8, style=phys, maxnames=12, articletitle=false, biblabel=brackets, chaptertitle=false, pageranges=false]{biblatex}
+% This is done to ensure
+\DefineBibliographyStrings{english}{%
+    andothers = {\em et\addabbrvspace al\adddot}
+}
+%adding the bibtex file name
+\addbibresource{thesis.bib}
+
+% Use this for adding a title page already rendered as pdf (with graphics as prescribed by your university)
+\usepackage{pdfpages}
+\begin{document}
+\includepdf[pages=-]{chapters/title/title_page}
+
+% Adding content like the abstract, toc, and so on.
+\frontmatter
+\include{chapters/abstract/abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% The meat of your thesis, the different chapters
+\mainmatter
+\include{chapters/chap_1/chap_1}
+\include{chapters/chap_2/chap_2}
+\include{chapters/appendix/appendix}
+
+%Bibliography and stuff after your main text (Acknowledgements, CV, publications, etc.)
+\backmatter
+\chapter*{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliography}
+\markboth{Bibliography}{Bibliography}
+\printbibliography[heading=none]
+%Stuff to be included after the bibliography
+\include{chapters/acknowledgements/acknowledgements}
+\end{document}

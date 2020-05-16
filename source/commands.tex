@@ -1,0 +1,114 @@
+\documentclass[12pt, openany]{book}
+\usepackage{a4}
+\usepackage{epsfig}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage[procnames]{listings}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{xr}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage[toc,page]{appendix}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{chemist}
+\usepackage{tikz}
+
+\usepackage{chemformula}
+\usepackage{minted}
+\usepackage{miller}
+\usepackage{titlesec}
+
+\usepackage{csquotes}
+\usetikzlibrary{shapes.geometric, arrows}
+% To get flow charts as eps
+\usetikzlibrary{external}
+\newcommand{\figpath}{figures}
+
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\abinitio}{\textit{ab initio}}
+
+\usepackage[ngerman,american]{babel} % to mix German abstract and rest English
+\usepackage{wrapfig}  % text floating around figures
+\usepackage{tabularx} % to control the width of tables and columns
+\usepackage{setspace} % line spacing
+\usepackage{fancyhdr} % line in Header
+
+\usepackage{dcolumn}  % align number entry in table columns by decimal point '.'
+\usepackage{maybemath} % for bold math in headers etc.
+                       % use  \maybebm{} for bold, \maybeit{} for italic, \maybesf...
+\usepackage[linktocpage, colorlinks, citecolor=black, linkcolor=black, urlcolor=black]{hyperref}  % having hyperlinks in black saves printing costs!
+
+\hypersetup{pdftitle = {<title of your thesis>},
+pdfauthor = {<your name>}, pdfkeywords = {<some>, <good>, <keywords>}}
+
+\pagenumbering{arabic} %
+\setlength{\parindent}{0.4cm}
+
+\pagestyle{fancy}
+
+
+%code mode
+\definecolor{keywords}{RGB}{255,0,90}
+\definecolor{comments}{RGB}{0,0,113}
+\definecolor{red}{RGB}{160,0,0}
+\definecolor{green}{RGB}{0,150,0}
+
+\lstset{language=Python,
+        basicstyle=\ttfamily\small,
+        keywordstyle=\color{keywords},
+        commentstyle=\color{comments},
+        stringstyle=\color{red},
+        showstringspaces=false,
+        identifierstyle=\color{blue},
+        rulecolor=\color{black},
+        frame=single,
+        tabsize=2,
+        procnamekeys={def,class}}
+
+% global change of font in tables
+\newenvironment{tabschrift}{\begin{footnotesize}}{\end{footnotesize}}
+
+\setlength{\evensidemargin}{0.0cm} %
+\setlength{\oddsidemargin}{0.5cm} %
+\setlength{\textwidth}{15.3cm} %
+\setlength{\hoffset}{0cm} % = 1 inch + number
+
+% Chapter in Header in lowercase
+\renewcommand{\chaptermark}[1]{
+\markboth{\chaptername \ \thechapter.\ #1}{}} %
+\fancyhead{} \fancyhead[LE,RO]{\leftmark} %
+\fancypagestyle{plain}{
+   \fancyhf{}
+   \fancyfoot[CE,CO]{\thepage}
+   \renewcommand{\headrulewidth}{0pt}}
+\fancyfoot{} \fancyfoot[CE,CO]{\thepage} %
+
+
+%\addtolength{\headwidth}{\marginparsep}
+%\addtolength{\headwidth}{\marginparwidth}
+\setlength{\headwidth}{\textwidth} % line in  header as wide as text
+
+\setcounter{topnumber}{3}% default 2
+\setcounter{bottomnumber}{3}% default 1
+\setcounter{totalnumber}{6} % default 3
+
+
+\renewcommand{\textfraction}{0.05} %default 0.2
+\renewcommand{\topfraction}{0.95} % default 0.7
+\renewcommand{\bottomfraction}{0.95} %default 0.3
+\renewcommand{\floatpagefraction}{0.75} % default 0.5
+
+
+% shortcut for kbT
+\newcommand{\kbT}{k_{\mathrm{B}} T}
+
