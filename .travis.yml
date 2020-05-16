@@ -11,3 +11,4 @@ script:
  - bibtex thesis
  - pdflatex -shell-escape thesis.tex
  - pdflatex -shell-escape thesis.tex
+ - cd ../
