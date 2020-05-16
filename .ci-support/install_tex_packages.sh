@@ -16,6 +16,7 @@ if ! command -v texlua > /dev/null; then
   tar -xzf install-tl-unx.tar.gz
   cd install-tl-20*
   pwd
+
   # Install a minimal system
   ./install-tl --profile=../.ci-support/texlive.profile
 
