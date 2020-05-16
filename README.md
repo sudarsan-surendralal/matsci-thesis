@@ -1,7 +1,7 @@
 # matsci-thesis
 
-A clear and easy to use tex template for academic thesis optimized for materials
-science students.
+A clear and easy to use template for academic thesis optimized for materials
+science students using TeX.
 
 TeX is a beautiful language that is perfect for academic thesis writing especially
 for STEM fields. However, there is a little bit of a learning curve for new TeX users
@@ -19,3 +19,9 @@ file contains all new command definitions, document setting, and the list of pac
 to be used. The [figures](source/figures) folder is supposed to contain all the figures.
 The main text of your thesis is supposed to be put in the [chapters](source/chapters)
 folder.
+
+## Documentation
+
+Unlike regular programming languages, it's a little cumbersome to provide documentation
+for TeX files. So comments starting with the `%` symbol are useful to understand what's
+going on.
