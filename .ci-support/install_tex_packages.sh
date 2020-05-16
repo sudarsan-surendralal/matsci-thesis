@@ -15,7 +15,7 @@ if ! command -v texlua > /dev/null; then
   wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
   tar -xzf install-tl-unx.tar.gz
   cd install-tl-20*
-
+  pwd
   # Install a minimal system
   ./install-tl --profile=../.ci-support/texlive.profile
 
