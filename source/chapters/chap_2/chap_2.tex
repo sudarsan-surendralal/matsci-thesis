@@ -1,13 +1,15 @@
 \chapter{A chapter with equations, chemical formula, figures and tables}
 \label{chap_main}
 
-The previous chapter \ref{chap_intro} contained only some text. Here some sample equations, chemical formula, figures, and tables
+The previous chapter \ref{chap_intro} contained only some text. Here some sample
+equations, chemical formula, figures, and tables
 are introduced.
 
 \section{Section with equations and chemical formula}
 \label{sec_eq_fig_tab}
 
-Materials science is highly interdisciplinary. So you will have to write complex equations some condensed-matter physicists use like:
+Materials science is highly interdisciplinary. So you will have to write complex
+equations some condensed-matter physicists use like:
 
 \begin{equation}
 \expval{\hat{O}}{\Psi_e} = \int \dotsc \int \Psi_e^{*}(x_1,\dotsc,x_N) \hat{O}
@@ -37,7 +39,8 @@ With the appropriate tex packages defined, all this is possible.
 \section{Section with tables and figures}
 \label{sec_tab_figs}
 
-Here are some sample tables and figures. For the table, I've taken data from my thesis and references \cite{Singh-miller2009, Sakong2018, Kittel1976, Salmeron1983}.
+Here are some sample tables and figures. For the table, I've taken data from my
+thesis and references \cite{Singh-miller2009, Sakong2018, Kittel1976, Salmeron1983}.
 
 \begin{table}[!tbh]
 \begin{center}
@@ -53,15 +56,34 @@ Here are some sample tables and figures. For the table, I've taken data from my 
   \bottomrule
   \end{tabular}
 \end{center}
-\caption[Calculated lattice parameter of Pt and work function of the Pt\hkl(1 1 1) surface.]{The calculated lattice parameter of bulk Pt and the work function of the Pt\hkl(1 1 1) surface using different exchange-correlation functionals compared to experimental values.}
+\caption[Calculated lattice parameter of Pt and work function of the Pt\hkl(1 1 1)
+surface.]{The calculated lattice parameter of bulk Pt and the work function of the
+Pt\hkl(1 1 1) surface using different exchange-correlation functionals compared to
+experimental values.}
 \label{main_tab1}
 \end{table}
 
 \begin{figure}[!tbh]
 \centering
 \includegraphics[scale=1., height=8cm]{\figpath/sinx.pdf}
-\caption[A sinus curve]{A sinus curve to show how to include figures along with captions.} %The text in square brackets is what is rendered in the list of figures.
+\caption[A sinus curve]{A sinus curve to show how to include figures along with
+captions.} %The text in square brackets is what is rendered in the list of figures.
 \label{main_fig1}
 \end{figure}
 
-Notice how in table \ref{main_tab1}, I've rendered crystallographic directions using the "miller" tex package.
+Notice how in table \ref{main_tab1}, I've rendered crystallographic directions using
+the "miller" tex package.
+
+\section{Section with code}
+\label{sec_code}
+
+If you are in a computational field, you might need to include some code in your
+thesis. The "minted" TeX package is useful for this. For example, some python code
+can be inserted the following way:
+
+\begin{minted}{python}
+    import numpy as np
+    import matplotlib.pylab as plt
+\end{minted}
+
+You could also insert inline code like so: \mintinline{python}{numpy}.
