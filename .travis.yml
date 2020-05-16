@@ -6,7 +6,8 @@ cache:
     - /tmp/texlive
     - $HOME/.texlive
 script:
- - pdflatex -shell-escape source/thesis.tex
- - bibtex source/thesis
- - pdflatex -shell-escape source/thesis.tex
- - pdflatex -shell-escape source/thesis.tex
+ - cd source
+ - pdflatex -shell-escape thesis.tex
+ - bibtex thesis
+ - pdflatex -shell-escape thesis.tex
+ - pdflatex -shell-escape thesis.tex
