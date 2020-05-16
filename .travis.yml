@@ -1,6 +1,6 @@
 install:
  # tex install
- - source ./.ci-support/texlive_install.sh
+ - source ./.ci-support/install_tex_packages.sh
 cache:
   directories:
     - /tmp/texlive
