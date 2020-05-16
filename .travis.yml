@@ -1,0 +1,12 @@
+install:
+ # tex install
+ - source ./.ci-support/texlive_install.sh
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+script:
+ - pdflatex -shell-escape thesis.tex
+ - bibtex thesis
+ - pdflatex -shell-escape thesis.tex
+ - pdflatex -shell-escape thesis.tex
