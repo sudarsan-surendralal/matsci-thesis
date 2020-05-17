@@ -1,7 +1,5 @@
 \documentclass[12pt, openany]{book}
 \usepackage{a4}
-\usepackage{epsfig}
-\usepackage{wrapfig}
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -13,40 +11,31 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes, arrows}
 \usepackage{physics}
-\usepackage{amsmath}
 \usepackage{xr}
 \usepackage{amsfonts}
 \usepackage{booktabs}
 \usepackage{subcaption}
 \usepackage[toc,page]{appendix}
 \usepackage[nottoc,numbib]{tocbibind}
-\usepackage{chemist}
-\usepackage{tikz}
-
 \usepackage{chemformula}
 \usepackage{minted}
 \usepackage{miller}
 \usepackage{titlesec}
-
 \usepackage{csquotes}
 \usetikzlibrary{shapes.geometric, arrows}
 % To get flow charts as eps
 \usetikzlibrary{external}
-\newcommand{\figpath}{figures}
 
-\newcommand{\etal}{\textit{et al.}}
-\newcommand{\abinitio}{\textit{ab initio}}
-
-\usepackage[ngerman,american]{babel} % to mix German abstract and rest English
 \usepackage{wrapfig}  % text floating around figures
 \usepackage{tabularx} % to control the width of tables and columns
 \usepackage{setspace} % line spacing
 \usepackage{fancyhdr} % line in Header
 
-\usepackage{dcolumn}  % align number entry in table columns by decimal point '.'
-\usepackage{maybemath} % for bold math in headers etc.
-                       % use  \maybebm{} for bold, \maybeit{} for italic, \maybesf...
 \usepackage[linktocpage, colorlinks, citecolor=black, linkcolor=black, urlcolor=black]{hyperref}  % having hyperlinks in black saves printing costs!
+
+% Trying out new biblatex format
+% Specifying how the references should be rendered
+\usepackage[backend=bibtex8, style=phys, maxnames=12, articletitle=false, biblabel=brackets, chaptertitle=false, pageranges=false]{biblatex}
 
 \hypersetup{pdftitle = {<title of your thesis>},
 pdfauthor = {<your name>}, pdfkeywords = {<some>, <good>, <keywords>}}
@@ -94,8 +83,6 @@ pdfauthor = {<your name>}, pdfkeywords = {<some>, <good>, <keywords>}}
 \fancyfoot{} \fancyfoot[CE,CO]{\thepage} %
 
 
-%\addtolength{\headwidth}{\marginparsep}
-%\addtolength{\headwidth}{\marginparwidth}
 \setlength{\headwidth}{\textwidth} % line in  header as wide as text
 
 \setcounter{topnumber}{3}% default 2
@@ -109,6 +96,8 @@ pdfauthor = {<your name>}, pdfkeywords = {<some>, <good>, <keywords>}}
 \renewcommand{\floatpagefraction}{0.75} % default 0.5
 
 
-% shortcut for kbT
+% New command definitions to be used in the latex files
 \newcommand{\kbT}{k_{\mathrm{B}} T}
-
+\newcommand{\figpath}{figures}
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\abinitio}{\textit{ab initio}}
