@@ -27,4 +27,8 @@ tlmgr install luatex
 # Other contrib packages: done as a block to avoid multiple calls to tlmgr
 # texlive-latex-base is needed to run pdflatex
 # Take packages from http://ctan.ebinger.cc/tex-archive/systems/texlive/tlnet/archive/
-tlmgr install < .ci-support/package_list
+tlmgr install  /
+      a4  /
+      graphicx /
+      physics /
+      minted /
