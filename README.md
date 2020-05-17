@@ -1,5 +1,7 @@
 # matsci-thesis
 
+[![Build Status](https://travis-ci.com/sudarsan-surendralal/matsci-thesis.svg?branch=master)](https://travis-ci.com/sudarsan-surendralal/matsci-thesis)
+
 A clear and easy to use template for academic thesis optimized for materials
 science students using TeX.
 
