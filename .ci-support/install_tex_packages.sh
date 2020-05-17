@@ -38,4 +38,4 @@ tlmgr install  \
   chemformula                    \
   miller                         \
   biblatex \
-  biber \
+  biblatex-phys \
