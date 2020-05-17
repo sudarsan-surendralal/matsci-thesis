@@ -5,6 +5,8 @@
 A clear and easy to use template for academic thesis optimized for materials
 science students using TeX.
 
+## Purpose
+
 TeX is a beautiful language that is perfect for academic thesis writing especially
 for STEM fields. However, there is a little bit of a learning curve for new TeX users
 and students spend a lot of time setting up an appropriate tex style for their needs
@@ -27,3 +29,7 @@ folder.
 Unlike regular programming languages, it's a little cumbersome to provide documentation
 for TeX files. So comments starting with the `%` symbol are useful to understand what's
 going on.
+
+## Acknowledgements
+
+Thanks to [Felix Lochner](https://github.com/FeLoch) for help with `biblatex` formats and [Jan Janssen](https://github.com/jan-janssen) for help with continuous integration.
