@@ -32,6 +32,6 @@ tlmgr install  \
   collection-fontsrecommended    \
   collection-latexextra          \
   minted                         \
-  hyperref
-  physics \
-  minted \
+  hyperref                       \
+  physics                        \
+  minted                         \
