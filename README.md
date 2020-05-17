@@ -14,7 +14,7 @@ such users which can be easily adapted.
 
 The [source](source) folder contains all the necessary tex files. The [thesis.tex](source/thesis.tex)
 is the main tex file that needs to be compiled and [thesis.bib](source/thesis.bib)
-is the bibliography file where all `bibtex` entries are put. The [thesis.tex](source/thesis.tex)
+is the bibliography file where all `bibtex` entries are put. The [commands.tex](source/commands.tex)
 file contains all new command definitions, document setting, and the list of packages
 to be used. The [figures](source/figures) folder is supposed to contain all the figures.
 The main text of your thesis is supposed to be put in the [chapters](source/chapters)
