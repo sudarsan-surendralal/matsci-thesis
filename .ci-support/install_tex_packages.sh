@@ -37,4 +37,5 @@ tlmgr install  \
   minted                         \
   chemformula                    \
   miller                         \
-  bibtex8                       \
+  biblatex                       \
+  bibtex8                        \
