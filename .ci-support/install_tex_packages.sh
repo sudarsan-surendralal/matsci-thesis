@@ -35,6 +35,7 @@ tlmgr install  \
   hyperref                       \
   physics                        \
   minted                         \
+  pygmentize                     \
   chemformula                    \
   miller                         \
   biblatex \
