@@ -28,7 +28,10 @@ tlmgr install luatex
 # texlive-latex-base is needed to run pdflatex
 # Take packages from http://ctan.ebinger.cc/tex-archive/systems/texlive/tlnet/archive/
 tlmgr install  \
-      a4  \
-      graphicx \
-      physics \
-      minted \
+  collection-publishers          \
+  collection-fontsrecommended    \
+  collection-latexextra          \
+  minted                         \
+  hyperref
+  physics \
+  minted \
