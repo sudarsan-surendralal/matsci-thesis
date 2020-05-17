@@ -1,6 +1,6 @@
-collection-publishers          /
-collection-fontsrecommended    /
-collection-latexextra          /
-minted                         /
-hyperref                       /
-pygmentex                      /
+book
+a4
+float
+graphicx
+physics
+minted
