@@ -1,7 +1,7 @@
 install:
  # tex install
  - source ./.ci-support/install_tex_packages.sh
- - pip install Pygments
+ - pip install --user Pygments
 cache:
   directories:
     - /tmp/texlive
