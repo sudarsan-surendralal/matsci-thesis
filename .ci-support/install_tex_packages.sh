@@ -37,5 +37,5 @@ tlmgr install  \
   minted                         \
   chemformula                    \
   miller                         \
-  biblstex \
+  biblatex \
   biber \
