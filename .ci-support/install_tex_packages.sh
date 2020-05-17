@@ -35,3 +35,5 @@ tlmgr install  \
   hyperref                       \
   physics                        \
   minted                         \
+  chemformula                    \
+  miller                         \
