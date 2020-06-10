@@ -21,7 +21,7 @@ script:
 deploy:
  - provider: pages
    skip_cleanup: true
-   github_token: $secret.ACCESS_TOKEN
+   github_token: repo-token: ${{ secrets.GITHUB_TOKEN }}
    on:
      branch: master
    overwrite: true
