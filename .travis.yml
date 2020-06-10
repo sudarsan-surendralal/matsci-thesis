@@ -16,4 +16,13 @@ script:
  - bibtex thesis
  - pdflatex -shell-escape thesis.tex
  - pdflatex -shell-escape thesis.tex
+ - mkdir ../public
+ - mv *.pdf ../public
  - cd ../
+ deploy:
+  - provider: pages
+    token: $GH_TOKEN
+    skip_cleanup: true
+    local_dir: public
+    on:
+      branch: master
