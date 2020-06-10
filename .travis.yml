@@ -19,8 +19,9 @@ script:
  - cp *.pdf ../.
  - cd ../
 deploy:
- - provider: releases 
+ - provider: pages
    skip_cleanup: true
+   github_token: $secret.ACCESS_TOKEN
    on:
      branch: master
    overwrite: true
