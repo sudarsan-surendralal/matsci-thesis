@@ -16,6 +16,7 @@ jobs:
         
       # Install tex packages
       - name:  Package Installation
+        shell: bash -l {0}
         run: |
           source ./.ci-support/install_tex_packages.sh
           wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
@@ -26,6 +27,7 @@ jobs:
           
       # Compilation of the pdf
       - name: Compile the PDF
+        shell: bash -l {0}
         run: |
           cd source
           pdflatex -shell-escape thesis.tex
