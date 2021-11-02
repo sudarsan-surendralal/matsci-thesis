@@ -13,16 +13,16 @@
 
 % Adding content like the abstract, toc, and so on.
 \frontmatter
-\include{chapters/abstract/abstract}
+\input{chapters/abstract/abstract}
 \tableofcontents
 \listoffigures
 \listoftables
 
 % The meat of your thesis, the different chapters
 \mainmatter
-\include{chapters/chap_1/chap_1}
-\include{chapters/chap_2/chap_2}
-\include{chapters/appendix/appendix}
+\input{chapters/chap_1/chap_1}
+\input{chapters/chap_2/chap_2}
+\input{chapters/appendix/appendix}
 
 %Bibliography and stuff after your main text (Acknowledgements, CV, publications, etc.)
 \backmatter
@@ -31,5 +31,5 @@
 \markboth{Bibliography}{Bibliography}
 \printbibliography[heading=none]
 %Stuff to be included after the bibliography
-\include{chapters/acknowledgements/acknowledgements}
+\input{chapters/acknowledgements/acknowledgements}
 \end{document}
